@@ -6,7 +6,7 @@ export default function Index() {
         lineHeight: '1.4',
       }}
     >
-      <h1>Welcome to Hockeystick Dev</h1>
+      <h1>Hockeystick Dev</h1>
       <ul>
         <li>
           <a
