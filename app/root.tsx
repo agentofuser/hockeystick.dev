@@ -9,7 +9,10 @@ import {
 import type { MetaFunction } from 'remix'
 
 export const meta: MetaFunction = () => {
-  return { title: 'Hockeystick Dev' }
+  return {
+    title:
+      'Hockeystick Dev—How to Build Websites with Remix.run and Cloudflare Workers',
+  }
 }
 
 export default function App() {
