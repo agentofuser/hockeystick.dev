@@ -1,5 +1,6 @@
 import {
   Links,
+  LinksFunction,
   LiveReload,
   Meta,
   Outlet,
@@ -7,6 +8,7 @@ import {
   ScrollRestoration,
 } from 'remix'
 import type { MetaFunction } from 'remix'
+import styles from './tailwind.css'
 
 export const meta: MetaFunction = () => {
   return {
@@ -14,6 +16,12 @@ export const meta: MetaFunction = () => {
       'Hockeystick Dev | How to Remix.run with Cloudflare Workers',
   }
 }
+
+export const links: LinksFunction = () => [
+  // FIXME: Uncomment after adding enough tailwind to make things look
+  //  good. With the basic styles it looks worse than with no css.
+  // { rel: 'stylesheet', href: styles },
+]
 
 export default function App() {
   return (
