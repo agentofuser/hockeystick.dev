@@ -11,7 +11,7 @@ import type { MetaFunction } from 'remix'
 export const meta: MetaFunction = () => {
   return {
     title:
-      'Hockeystick Dev—How to Build Websites with Remix.run and Cloudflare Workers',
+      'Hockeystick Dev | How to Remix.run with Cloudflare Workers',
   }
 }
 
