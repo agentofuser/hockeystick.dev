@@ -1,3 +1,8 @@
+// WAITING for this to be fixed before we can use react-markdown:
+// https://github.com/remix-run/remix/issues/109
+// import ReactMarkdown from 'react-markdown'
+// import remarkGfm from 'remark-gfm'
+
 export default function Index() {
   return (
     <div
