@@ -6,6 +6,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLocation,
 } from 'remix'
 import type { MetaFunction } from 'remix'
 import styles from './tailwind.css'
@@ -24,6 +25,8 @@ export const links: LinksFunction = () => [
 ]
 
 export default function App() {
+  const location = useLocation()
+
   return (
     <html lang="en">
       <head>
@@ -34,6 +37,10 @@ export default function App() {
         />
         <Meta />
         <Links />
+        <link
+          rel="canonical"
+          href={`https://hockeystick.dev${location.pathname}`}
+        />
       </head>
       <body>
         <Outlet />
