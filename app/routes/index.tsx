@@ -5,21 +5,16 @@
 
 export default function Index() {
   return (
-    <div
-      style={{
-        fontFamily: 'system-ui, sans-serif',
-        lineHeight: '1.4',
-      }}
-    >
-      <h1>Hockeystick Dev</h1>
-      <h2>
+    <div className="prose dark:prose-invert">
+      <h1>HockeyStick.dev</h1>
+      <p className="lead">
         Learn how to build full-stack websites on the edge with
         Remix.run and Cloudflare Workers.
-      </h2>
+      </p>
       <p>
         Hi, my name is <strong>Helder</strong>, aka{' '}
         <a href="https://agentofuser.com">@agentofuser</a>, and this is
-        my ubermeta #LearnInPublic dev log about learning Remix and
+        my ubermeta #LearnInPublic devlog about learning Remix and
         Cloudflare Workers (and Pages, KV, etc.) while building out
         this very website and the CMS to edit it, which I plan later on
         to extract into its own product.

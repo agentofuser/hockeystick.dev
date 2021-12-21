@@ -14,14 +14,12 @@ import styles from './tailwind.css'
 export const meta: MetaFunction = () => {
   return {
     title:
-      'Hockeystick Dev | How to Remix.run with Cloudflare Workers',
+      'HockeyStick.dev | How to Remix.run with Cloudflare Workers',
   }
 }
 
 export const links: LinksFunction = () => [
-  // FIXME: Uncomment after adding enough tailwind to make things look
-  //  good. With the basic styles it looks worse than with no css.
-  // { rel: 'stylesheet', href: styles },
+  { rel: 'stylesheet', href: styles },
 ]
 
 export default function App() {
@@ -43,7 +41,9 @@ export default function App() {
         />
       </head>
       <body>
-        <Outlet />
+        <div className="container mx-auto max-w-screen-md mt-16">
+          <Outlet />
+        </div>
         <ScrollRestoration />
         <Scripts />
         {process.env.NODE_ENV === 'development' && <LiveReload />}
